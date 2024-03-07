@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Acerca de</title>
+<style>
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+button {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+#info {
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Bienvenido a mi pagina web</h1>
+
+  <button onclick="mostrarInfo()">Acerca de</button>
+  <button id="closeBtn" class="close-btn" onclick="cerrarVentana()">Cerrar</button>
+  <p id="info"></p>
+</div>
+
+<script>
+function mostrarInfo() {
+  document.getElementById("info").style.display = "block";
+  document.getElementById("info").innerHTML = "Esta pagina web fue creada por Jocelyn en 2024. Lenguaje utilizado: HTML, CSS, JavaScript.";
+}
+
+function cerrarVentana() {
+  window.close();
+}
+
+</script>
+
+</body>
+</html>

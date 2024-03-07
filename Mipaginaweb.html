@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web Personalizada</title>
+    <link rel="stylesheet" href="web.css">
+
+    <script>
+        function abrirVentana(url) {
+            window.open(url, "_blank", "width=800, height=600");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a mi Pagina Web!</h1>
+        <p>Mi nombre es Jocelyn Sanchez Valdivieso y soy del 4°L </p>
+    </header>
+
+    <main>
+        <button onclick="abrirVentana('inicio.html')">Inicio</button>
+        <button onclick="abrirVentana('acerca.html')">Acerca de</button>
+        <button onclick="abrirVentana('https://www.youtube.com')">YouTube</button>
+        <button onclick="abrirVentana('https://www.spotify.com')">Spotify</button>
+        <button onclick="abrirVentana('https://www.google.com/maps')">Google Maps</button>
+        <button onclick="abrirVentana('https://youtu.be/_YDCvsOE3EQ?si=lc9J0dgTGOQ6j2ZY')">Video</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jocelyn</p>
+    </footer>
+</body>
+</html>
+
